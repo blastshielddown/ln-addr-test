@@ -15,3 +15,19 @@ Setup:
 
 To run:
 `npm start`
+
+Example:
+lnurlp endpoint:
+
+```sh
+curl http://127.0.0.1:3003/.well-known/lnurlp/testman
+```
+Returns:
+`{"tag":"payRequest","callback":"http://127.0.0.1:3003/payment-request/id-1234"}`
+
+lnurl payment request:
+
+```sh
+curl http://127.0.0.1:3003/payment-request/id-1234\?amount\=10000
+```
+Returns lnurl pr
